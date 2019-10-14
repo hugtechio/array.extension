@@ -1,0 +1,27 @@
+{
+  "name": "array.extension",
+  "version": "0.0.1",
+  "description": "Extend array object of the typescript",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "yarn jest",
+    "build": "tsc"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugtechio/array.extension.git"
+  },
+  "keywords": [
+    "typescript",
+    "array"
+  ],
+  "author": "hugtech.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hugtechio/array.extension/issues"
+  },
+  "homepage": "https://github.com/hugtechio/array.extension#readme"
+}
