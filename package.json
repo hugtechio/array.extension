@@ -1,6 +1,6 @@
 {
   "name": "array.extension",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Extend array object of the typescript",
   "main": "dist/index.js",
   "scripts": {
