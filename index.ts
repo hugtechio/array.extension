@@ -1,10 +1,10 @@
+import { tsAnyKeyword } from "@babel/types"
+
 /* eslint no-extend-native: ["error", { "exceptions": ["Array","Object"] }] */
 
 export {}
 
-//
-// definition
-//
+
 declare global {
     interface Array<T> {
         uniq<T> (comparer: (value1: T, valu2: T) => boolean): T[];
@@ -17,9 +17,6 @@ declare global {
     }
 }
 
-//
-// Array extension
-//
 Array.prototype.uniq = function<T> (comparer: (value1: T, valu2: T) => boolean): T[] {
     return this.filter((value1, index1, array1): boolean => {
         const index2 = array1.findIndex((value2): boolean => comparer(value1, value2))
@@ -31,9 +28,6 @@ Array.prototype.contains = function<T> (value: T): boolean {
     return (this.indexOf(value) >= 0)
 }
 
-//
-// Object extension
-//
 interface IndexObject {
     [index: string]: string
 }

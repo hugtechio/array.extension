@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "yarn jest",
-    "build": "tsc"
+    "build": "tsc",
+    "doc": "npx typedoc --out docs ."
   },
   "files": [
     "dist"
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/hugtechio/array.extension/issues"
   },
-  "homepage": "https://github.com/hugtechio/array.extension#readme"
+  "homepage": "https://github.com/hugtechio/array.extension#readme",
+  "devDependencies": {
+    "typedoc": "^0.15.0"
+  }
 }
